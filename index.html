@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+	 <style>
+        .move-right {
+            padding-left: 25px;
+        }
+		
+		.logo {
+			width: 12%;
+			padding-right: 450px;
+		}
+
+        /* Add this style */
+        #sidebar ul li:last-child {
+            border-bottom: 1px solid #000; /* Change color as needed */
+        }
+
+        /* Add this style for the menu image */
+        .menu {
+            float: left;
+            width: 50px; /* Adjust as needed */
+            height: 50px; /* Adjust as needed */
+        }	
+		
+		 .down {
+            padding-up: 50px;
+        }
+		
+		 .search {
+            padding-right: 50px;
+        }
+
+        /* Add this style for the search */
+        #search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+			
+        }
+		
+		.avatar {
+			border-radius: 50%;
+			padding-top: 15px;
+		}
+		
+		.icon {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
+	 </style>
+</head>
+<body>
+    <header>
+        <!-- Add this div for the menu image -->
+        <div class="menu">
+            <img src="ressources/menu.png" alt="Menu Image" class="down">
+        </div>
+        <div id="logo">
+            <img src="ressources/logo.png" alt="YouTube Logo" class="logo" class="down">
+        </div>
+        <div id="search">
+            <input type="text" placeholder="Rechercher sur GP-TUBE" class="search">
+            <button class="down">Go</button>
+        </div>
+        <div id="user" style="position: relative; right: 773px;">
+			<img src="https://cdn.discordapp.com/avatars/905105350678675467/9b7b7544944a7223a920a00ce8bbf6e5.webp?size=60" class="avatar">
+		</div>
+    </header>
+    <main>
+        <div id="sidebar">
+            <ul>
+                <li><img src="ressources/home.png" alt="Home Icon" class="icon"><a href="index.html">Accueil</a></li>
+                <li><img src="ressources/shorts.png" alt="Shorts Icon" class="icon"><a href="shorts.html">Shorts</a></li>
+                <li><img src="ressources/subscriptions.png" alt="Subscriptions Icon" class="icon"><a href="abonnements.html">Abonnements</a></li>
+				<li><img src="ressources/someone.png" alt="Someone Icon" class="icon"><a href="channel/me.html">Votre chaîne</a></li>
+				<li><img src="ressources/history.png" alt="History Icon" class="icon"><a href="history.html">Historique</a></li>
+            </ul>
+        </div>
+        <div id="videos" class="move-right">Videos</div>
+    </main>
+</body>
+</html>
